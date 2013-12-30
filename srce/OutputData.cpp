@@ -144,7 +144,7 @@ bool COutputData::OutputXML( xercesc::DOMDocument* pmyDOMDocument, const char* x
 		xmlFilePath );
 
     //Return the first registered implementation that has the desired features. In this case, we are after a DOM implementation that has the LS feature... or Load/Save. 
-    DOMImplementation *implementation = DOMImplementationRegistry::getDOMImplementation(L"LS"); 
+    DOMImplementation *implementation = DOMImplementationRegistry::getDOMImplementation( X ( "LS" ) );
 
     if ( 0 != implementation ) {
 		// Create a DOMLSSerializer which is used to serialize a DOM tree into an XML document. 
