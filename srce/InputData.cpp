@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "InputData.h"
 
 #include <xercesc/parsers/XercesDOMParser.hpp>

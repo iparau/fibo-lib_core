@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "OutputData.h"
 
 #include <xercesc/framework/XMLFormatter.hpp>

@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "AStr.h"
 
 namespace core {

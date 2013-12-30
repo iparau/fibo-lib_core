@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "NStr.h"
 
 #include <stdio.h>

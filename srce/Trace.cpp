@@ -1,5 +1,3 @@
-#include "StdAfx.h"
-
 #include "Trace.h"   
 
 #include <stdio.h>

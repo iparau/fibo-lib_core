@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "XStr.h"
 
 // Other include files, declarations, and non-Xerces-C++ initializations.
