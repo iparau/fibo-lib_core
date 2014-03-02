@@ -148,7 +148,7 @@ bool COutputData::OutputXML( xercesc::DOMDocument* pmyDOMDocument, const char* x
 
     if ( 0 != implementation ) {
 		// Create a DOMLSSerializer which is used to serialize a DOM tree into an XML document. 
-		DOMLSSerializer *serializer = ((DOMImplementationLS*)implementation)->createLSSerializer();
+        DOMLSSerializer *serializer = (static_cast<DOMImplementationLS*>(implementation))->createLSSerializer();
 		
 		if ( 0 != serializer ) { 
 
@@ -166,7 +166,7 @@ bool COutputData::OutputXML( xercesc::DOMDocument* pmyDOMDocument, const char* x
 			if ( 0 != formatTarget ) { 
 
 				// Create a new empty output destination object. 
-				DOMLSOutput *output = ((DOMImplementationLS*)implementation)->createLSOutput();
+                DOMLSOutput *output = (static_cast<DOMImplementationLS*>(implementation))->createLSOutput();
 				
 				if ( 0 != output ) { 
 

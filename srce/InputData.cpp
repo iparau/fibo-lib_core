@@ -18,6 +18,7 @@ namespace core {
 using namespace tools;
 
 CInputData::CInputData(void)
+    : fibonacciID( 0 )
 {
 
 }
@@ -41,7 +42,7 @@ bool CInputData::Initialize(const char * xmlFilePath)
 		parser->setValidationScheme(XercesDOMParser::Val_Always);
 		parser->setDoNamespaces(true);    // optional
 
-		ErrorHandler* errHandler = (ErrorHandler*) new HandlerBase();
+        ErrorHandler* errHandler = static_cast<ErrorHandler*>( new HandlerBase() );
 
 		if (0 != errHandler) {
 			parser->setErrorHandler(errHandler);
